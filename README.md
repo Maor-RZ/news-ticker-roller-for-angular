@@ -19,6 +19,6 @@ and than replace the original component dir with this repo
 * *ref* - link (If there is any)
 
 * Height & width of roller - px/vh/vw size units ( [rollerHeight] & [rollerWidth] ) 
-* Bordered - yes or no for now ( [bordered] )
+* Bordered - yes/no for now ( [bordered] )
 * Speed in miliseconds ([speed])
-* Top-down (default) | Bottom-up ( [topOrbottom] )
+* Top-down (default) / Bottom-up ( [topOrbottom] - true / false)
