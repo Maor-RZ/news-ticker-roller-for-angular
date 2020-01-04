@@ -1,0 +1,27 @@
+
+<div class="news-wrapper"
+(mouseenter) ="off()"
+(mouseleave) ="on()"
+[ngStyle] = "style()"
+
+>
+    <div id="roller" class="news-roller" *ngFor="let new of news; let flag = roll" [ngStyle] = "{'height.px': calculatedH}"
+    [ngStyle] = "{'width.px': calculatedW}">
+        <div class="news-p" [ngStyle]="{'top.px': new.yPos}">
+                <div class="centerize">
+                <a *ngIf="new.ref" [attr.href]="new.ref">    
+                    <h4>{{new.header}}</h4>
+                    <p>{{new.contentToDisplay}}</p> 
+                </a>
+                <div *ngIf="!new.ref">    
+                        <h4>{{new.header}}</h4>
+                        <div class="ellipsis">
+                            <div>
+                                <p>{{new.contentToDisplay}}</p> 
+                            </div>
+                        </div>
+                </div>       
+                </div>
+        </div> 
+    </div>
+</div>

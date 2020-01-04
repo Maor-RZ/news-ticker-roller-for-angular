@@ -1,0 +1,51 @@
+
+.ticker{
+    text-align: center;
+}
+.news-wrapper button{
+    margin: 15px;
+    border: 3px solid black;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+.news-wrapper h4, p{
+    margin: 4px;
+}
+.news-wrapper{
+    position: relative;
+  
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 999;
+    background: transparent;
+}
+
+.news-p{
+    position: absolute;
+    width: calc(80%);
+    margin: auto;
+    left: 50%;
+}
+.centerize {
+    position: relative;
+    left: -50%;
+}
+.news-p p{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.news-p a{
+    text-decoration: none;
+}
+
+.news-p:hover h4{
+    color: red;
+}
